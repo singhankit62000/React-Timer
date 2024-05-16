@@ -1,0 +1,112 @@
+.timer-container {
+    margin: 100px auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-weight: bold;
+}
+
+.timer-heading {
+    font-weight: bold;
+    font-size: 20px;
+    margin: auto;
+    text-decoration: underline;
+}
+
+.timer-labels {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 40px;
+}
+
+.timer-labels p {
+    padding: 20px;
+    width: 100%;
+    margin: 0 20px;
+    text-align: center;
+}
+
+.timer-display {
+    display: flex;
+    justify-content: space-between;
+}
+
+.timer-colon {
+    justify-self: center;
+    align-self: center;
+    font-size: 30px;
+    margin: 0;
+    padding: 5px 10px;
+}
+
+.timer-display input {
+    font-size: 100px;
+    font-weight: bold;
+    background-color: transparent;
+    color: white;
+    max-width: 220px;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: center;
+    appearance: initial;
+    -moz-appearance: textfield;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.timer-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+
+.timer-buttons button {
+    padding: 30px;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+
+    &:hover {
+        border: 2px solid white;
+        box-shadow: 1px 1px 5px 3px rgb(152, 152, 152);
+    }
+}
+
+.timer-button-start {
+    background-color: hsl(120, 100%, 40%);
+
+    &:hover {
+        background-color: hsl(120, 100%, 35%);
+    }
+}
+
+.timer-button-stop {
+    background-color: hsl(10, 100%, 40%);
+    /* display: none; */
+
+    &:hover {
+        background-color: hsl(10, 100%, 35%);
+    }
+}
+
+.timer-button-reset {
+    background-color: hsl(220, 100%, 40%);
+
+    &:hover {
+        background-color: hsl(220, 100%, 35%);
+    }
+}
